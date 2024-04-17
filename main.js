@@ -4,8 +4,8 @@ function SUM(y, u) {
 	return y + u;
 }
 
-var results = SUM(15, 15);
-console.log(results);
+
+console.log(SUM(15, 15));
 
 // ---
 
@@ -29,12 +29,12 @@ Sum(3, 3);
 
 // TASK 1   Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b
 
-function MIN(o, p) {
-	return o < p;
-}
+// function MIN(o, p) {
+// 	return o < p;
+// }
 
-var ReSult = MIN(3, 5);
-console.log(ReSult);
+// var ReSult = MIN(3, 5);
+// console.log(ReSult);
 
 //--- 
 
@@ -94,18 +94,16 @@ poW(3, 3);
 
 // TASK 3 Напишите функцию, которая принимает число, и возвращает строку "четное" или "нечетное".
 
-function NUMber(num1, num2) {
-	var message;
-	if (num1 % 1 === 0) {
-		message = "nechetnoe"
-	} else if (num2 % 2 === 0) {
-		message = "chetnoe"
-	} else ("salam aleikum");
-	return message;
+function NUMber(num) {
+	if(num % 2 === 0) {
+		return "четное"
+	} else if (num % 1 === 0) {
+		return "нечетное"
+	};
 };
 
-var EvenNUM = NUMber(5, 6);
-console.log(EvenNUM);
+console.log(NUMber(6));
+//не обязательно результат функции закидывать в переменную и уже только после этого выводить в консоль
 
 // TASK 4
 
@@ -139,20 +137,19 @@ console.log(getColor(23, 100,));
 // если число, то вызовете функцию squareNumber передав в нее это самое число.
 // Необходимо вывести результат пользователю (Либо замечание, либо квадрат числа) 
 
-function squareNumber(num) {
-	return num*3;
-};
+function squareNumber (num) {
+	return num*num;
+}
+console.log(squareNumber(4));
+ 
+function Random() {
+  const str = prompt('Введите число от 18 до 50')
+  const num = squareNumber(str)
+  if(num >= 18 && num <= 50) {
+    return squareNumber(num)
+  }
+  return 'Вы ввели значение не из диапазона'
+}
+ 
+console.log(Random())
 
-sum = squareNumber(3);
-console.log(sum);
-
-function squareNumber(num) {
-	num23 = 24;
-	var random = prompt("Number 18 - 50:")
-	if(num23 <= 50) {
-		console.log(num23*2);
-	}
-		return "this is not a number";
-};
-
-squareNumber(num23);
