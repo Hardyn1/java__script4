@@ -94,6 +94,17 @@ poW(3, 3);
 
 // TASK 3 Напишите функцию, которая принимает число, и возвращает строку "четное" или "нечетное".
 
+
+function Namber(Nem) {
+	if(Nem % 2 === 0) {
+		return "chetnoe";
+	} else if (Nem % 1 === 0) {
+		return "necthone";
+	};
+};
+
+console.log(Namber(4));
+
 function NUMber(num) {
 	if(num % 2 === 0) {
 		return "четное"
@@ -114,12 +125,12 @@ console.log(NUMber(6));
 // мы вызываем функцию getColor(23,100), в таком случае мы должны
 // получить строку "rgb(23,100,0)"
 
-function getColor(r = 0, g = 0, b = 0) {
+function getColor(r, g, b = 0) {
   return "rgb(" + r + ", " + g + ", " + b  + ")";
 }
  
-console.log(getColor(23, 100,));
-
+console.log(getColor(23, 100,134));
+console.log(getColor(23,100,));
 // TASK 5
 
 // Сложение +,
