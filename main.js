@@ -103,6 +103,7 @@ function NUMber(num) {
 };
 
 console.log(NUMber(6));
+
 //не обязательно результат функции закидывать в переменную и уже только после этого выводить в консоль
 
 // TASK 4
@@ -137,19 +138,22 @@ console.log(getColor(23, 100,));
 // если число, то вызовете функцию squareNumber передав в нее это самое число.
 // Необходимо вывести результат пользователю (Либо замечание, либо квадрат числа) 
 
+// Равно: a == b. Обратите внимание, для сравнения используется двойной знак равенства ==. Один знак равенства a = b означал бы присваивание.
+// Не равно. В математике обозначается символом ≠, но в JavaScript записывается как a != b.
+
 function squareNumber (num) {
 	return num*num;
 }
 console.log(squareNumber(4));
- 
-function Random() {
-  const str = prompt('Введите число от 18 до 50')
-  const num = squareNumber(str)
-  if(num >= 18 && num <= 50) {
-    return squareNumber(num)
-  }
-  return 'Вы ввели значение не из диапазона'
-}
- 
-console.log(Random())
 
+
+var input = prompt("Number 18 to 50 :");
+
+// изменили инпут на число
+var answer = Number(input);
+
+if(isNaN (answer)) {
+		alert ("this is not a number");
+} else (
+	console.log(squareNumber(answer))
+);
